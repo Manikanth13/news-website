@@ -2,7 +2,28 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, install dependancies
+
+```bash
+npm i
+# or
+yarn
+```
+
+## News Data api
+
+- To obtain the latest news overview, I've utilized the [`NewsData API`](https://newsdata.io/).
+- Please create a free account to obtain a public API key, which should be placed inside the `.env` file.
+- After replacing the key, kindly reload the app to fetch the updated news data.
+
+or copy the below environment variables:
+
+```
+NEXT_PUBLIC_API_URL= https://newsdata.io/api/1/news
+NEXT_PUBLIC_API_KEY = pub_39907b0e4f8e8cfd46614fe002fd733eb2b39
+```
+
+then, run the development server:
 
 ```bash
 npm run dev
@@ -16,21 +37,10 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Responsive Design
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Adjust the tab size to view the responsive design of the page on both mobile and desktop views.
 
-## Learn More
+## Navigation
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Website contains navigation breadcrumb which we can view only on the second level. The second level is only shown if a user clicks on the first level - Read More
